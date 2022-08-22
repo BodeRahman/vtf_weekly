@@ -228,6 +228,8 @@
         font-weight: 500;
       }
 
+      
+
       @media screen and (min-width: 601px) {
         .time {
           font-size: 0.9rem;
@@ -364,6 +366,8 @@
         align-self: center;
       }
 
+      
+
       /* CARD BACKGROUNDS */
 
       .card-1 {
@@ -413,6 +417,116 @@
           justify-content: center;
         }
       }
+      /*
+ CSS for the main interaction
+*/
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+
+.accordion label {
+  display: block;
+}
+
+/*
+ Styling
+*/
+body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+
+.accordion label {
+  color: #333;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #e8e8e8;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: #d8d8d8;
+}
+
+.accordion .handle label:before {
+  font-family: 'fontawesome';
+  content: "\f054";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: .58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "\f078";
+}
+
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 40px;
+}
+
+a {
+  color: #06c;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+h1 {
+  margin: 0 0 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.accordion {
+  max-width: 65em;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+}
     </style>
   </header>
 
@@ -422,6 +536,8 @@
       <div class="container">
 
         <h2 class="content__title"><u>Information Security Administrator Internship</u></h2>
+
+        
       </div>
       <div class="container overflow-hidden">
 
@@ -432,51 +548,99 @@
             <div class="col-12 col-lg-8 m-auto">
 
               <div class="container">
-                <div class="wrapper">
                   <h1>Internship 10 Weeks curriculum</h1>
-                  <ul class="sessions">
-                    <li class="li2">
-                      <div class="time">Week-1</div>
-                      <p>CyberSecurity Foundations</p>
-                    </li>
-                    <li class="li2">
-                      <div class="time">Week-2</div>
-                      <p>Vulnerability management + SIEM/Log Management</p>
-                    </li>
-                    <li class="li2">
-                      <div class="time">Week-3</div>
-                      <p>OSINT</p>
-                    </li>
-                    <li class="li2">
-                      <div class="time">Week-4</div>
-                      <p>Network Security</p>
-                    </li>
-                    <li class="li2">
-                      <div class="time">Week-5</div>
-                      <p>Endpoint Security</p>
-                    </li>
-                    <li class="li2">
-                      <div class="time">Week-6</div>
-                      <p>Web application security</p>
-                    </li>
-                    <li class="li2">
-                      <div class="time">Week-7</div>
-                      <p>Virtualization Fundamentals</p>
-                    </li>
-                    <li class="li2">
-                      <div class="time">Week-8</div>
-                      <p>Container fundamentals</p>
-                    </li>
-                    <li class="li2">
-                      <div class="time">Week-9</div>
-                      <p>Cloud Fundamentals</p>
-                    </li>
-                    <li class="li2">
-                      <div class="time">Week-10</div>
-                      <p>CTF or threat hunting lab</p>
-                    </li>
-                  </ul>
-                </div>
+                  
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle1" >
+                      <h2 class="handle">
+                        <label for="handle1">Week-1</label>
+                      </h2>
+                      <div class="content">
+                        <p>CyberSecurity Foundations</p>
+                      </div>
+                    </section>
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle2">
+                      <h2 class="handle">
+                        <label for="handle2">Week-2</label>
+                      </h2>
+                      <div class="content">
+                        <p>Vulnerability management + SIEM/Log Management</p>
+                      </div>
+                    </section>
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle3">
+                      <h2 class="handle">
+                        <label for="handle3">Week-3</label>
+                      </h2>
+                      <div class="content">
+                        <p>OSINT</p>
+                      </div>
+                    </section>
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle4" >
+                      <h2 class="handle">
+                        <label for="handle4">Week-4</label>
+                      </h2>
+                      <div class="content">
+                        <p>Network Security</p>
+                      </div>
+                    </section>
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle5">
+                      <h2 class="handle">
+                        <label for="handle5">Week-5</label>
+                      </h2>
+                      <div class="content">
+                        <p>Endpoint Security</p>
+                      </div>
+                    </section>
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle6">
+                      <h2 class="handle">
+                        <label for="handle6">Week-6</label>
+                      </h2>
+                      <div class="content">
+                        <p>Web Application Security</p>
+                      </div>
+                    </section>
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle7" >
+                      <h2 class="handle">
+                        <label for="handle7">Week-7</label>
+                      </h2>
+                      <div class="content">
+                        <p>Virtualization Fundamentals</p>
+                      </div>
+                    </section>
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle8">
+                      <h2 class="handle">
+                        <label for="handle8">Week-8</label>
+                      </h2>
+                      <div class="content">
+                        <p>Container fundamentals</p>
+                      </div>
+                    </section>
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle9">
+                      <h2 class="handle">
+                        <label for="handle9">Week-9</label>
+                      </h2>
+                      <div class="content">
+                        <p>Cloud Fundamentals</p>
+                      </div>
+                    </section>
+                    <section class="accordion">
+                      <input type="checkbox" name="collapse" id="handle10">
+                      <h2 class="handle">
+                        <label for="handle10">Week-10</label>
+                      </h2>
+                      <div class="content">
+                        <p>CTF or Treat Hunting Lab</p>
+                      </div>
+                    </section>
+                    
               </div>
             </div>
             <div class="main-container">
