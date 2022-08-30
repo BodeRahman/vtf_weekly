@@ -83,6 +83,11 @@ header {
     color: var(--themeColor);
 }
 
+.def {
+    color: var(--themeColor);
+    font-weight: bold;
+}
+
 .navbar .navbar-brand {
     font-family: Montserrat, Helvetica, sans-serif;
     font-weight: 600;
