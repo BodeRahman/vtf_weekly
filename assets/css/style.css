@@ -191,7 +191,7 @@ header {
     width: 20px;
     height: 20px;
     background: #efefef;
-    box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 4px 4px 4px rgb(168, 163, 163);
     border-radius: 50%;
     position: absolute;
     left: -12px;
@@ -206,6 +206,7 @@ header {
     box-shadow: none;
     font-size: 10px;
     background-color: var(--themeColor);
+    box-shadow: 4px 4px 4px #a09ee9;
     text-align: center;
     line-height: 20px;
 }
