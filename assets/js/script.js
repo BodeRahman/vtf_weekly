@@ -1,5 +1,6 @@
 
 const currWeek = 4;
+let modalOpen = false;
 
 const weekData = [
     {
@@ -57,21 +58,36 @@ const weekData = [
 function showModal(week) {
     const {title, topics} = weekData.filter(data => data.week === week)[0];
 
-    $("#weekModal .modal-title").html(title);
-    $("#weekModal .modal-body ul").html("");
-    topics.map(topic => $("#weekModal .modal-body ul").append(`<li class="inside-text">${topic}</li>`));
+    $("#weekModal .week-title").html(`Week ${week}: ${title}`);
+    $("#weekModal .body ul").html("");
+    topics.map(topic => $("#weekModal .body ul").append(`<li class="inside-text">${topic}</li>`));
 
-    $("#weekModal").modal("show");
+    $("#weekModal").show();
+    $("#weekModal .weekCard").css("margin-top", "-500px").animate({
+        marginTop: "0"
+    }, 500, () => modalOpen = true);
+}
+
+function closeModal() {
+    
+    $("#weekModal .weekCard").css("margin-top", "0").animate({
+        marginTop: "500px"
+    }, 200);
+
+    $("#weekModal").fadeOut("fast");
+    modalOpen = false;
+    
 }
 
 $( document ).ready(function() {
+    $("#weekModal").hide();
     // Populate All Weeks
     const section = weekData.map(data => `
         <div class="listItem${data.week < currWeek ? ' completed' : ''}">
             <span><strong>Week-${data.week}</strong></span>
             ${data.week < currWeek ?
-                `<button type="button" class="btn btn-primary btn-sm" onclick="showModal(${data.week})">
-                    Show
+                `<button type="button" class="btn iconBtn" onclick="showModal(${data.week})">
+                    <i class="fas fa-eye"></i>
                 </button>`
                 :
                 ""
@@ -95,4 +111,13 @@ $( document ).ready(function() {
     `)
 
     topics.map(topic => $("#currWeekList").append(`<li class="py-1">${topic}</li>`))
+
+});
+
+// Modal Mouse Click outside
+$(document).mouseup(function(e) {
+    const container = $("#weekModal .weekCard");
+    if (modalOpen && (!container.is(e.target) && container.has(e.target).length === 0)) {
+        closeModal();
+    }
 });
