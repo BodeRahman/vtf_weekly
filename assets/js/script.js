@@ -86,8 +86,8 @@ $( document ).ready(function() {
         <div class="listItem${data.week < currWeek ? ' completed' : ''}">
             <span><strong>Week-${data.week}</strong></span>
             ${data.week < currWeek ?
-                `<button type="button" class="btn btn-primary btn-sm" onclick="showModal(${data.week})">
-                    more
+                `<button type="button" class="btn iconBtn" onclick="showModal(${data.week})">
+                    <i class="fas fa-eye"></i>
                 </button>`
                 :
                 ""
