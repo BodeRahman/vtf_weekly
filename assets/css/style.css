@@ -251,9 +251,11 @@ footer {
 #weekModal .weekCard {
     background-color: #fff;
     border-radius: 1rem;
-    width: 80%;
-    min-width: 400px;
-    max-width: 700px;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 380px;
+    max-height: 80vh;
+    min-height: 60vh;
 }
 
 #weekModal .header {
@@ -273,7 +275,68 @@ footer {
 }
 
 #weekModal .body {
-    padding: 1rem
+    padding: 1rem;
+}
+
+#weekModal .accordion {
+    max-height: calc(80vh - 1rem - 60px);
+    overflow: auto;
+}
+
+#weekModal .accordion .accordion-item button {
+    transition: all 0.2s ease-in-out;
+}
+
+#weekModal .accordion .accordion-item button:hover {
+    padding-left: 1.0rem;
+}
+
+#weekModal .accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+#weekModal .accordion .accordion-single-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+}
+
+#weekModal .accordion .inner-button {
+    width: 100%;
+    padding: 0.2rem 1.2rem;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#weekModal .accordion .inner-button.last {
+    padding-bottom: 0;
+    padding-top: 0.5rem;
+    border-bottom: none;
+}
+
+#weekModal .accordion .inner-button:hover,
+#weekModal .accordion .inner-button.active {
+    font-weight: 600;
+}
+
+#weekModal .accordion .inner-button::after {
+    content: "\f054";
+    font-size: 0.9rem;
+    float: right;
+    font-family: "Font Awesome 5 Pro";
 }
 
 #weekModal .inside-text {
