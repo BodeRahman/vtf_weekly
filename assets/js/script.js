@@ -192,12 +192,14 @@ $( document ).ready(function() {
     //Populate Current Week
     const {week, title, topics} = weekData.filter(data => data.week === currWeek)[0];
     $("#currWeekContent").html(`
-        <h5 class="card-title">Week ${week}: ${title} </h5>
-        <p class="card-text text-end me-4">
-            <svg height="20" width="20" class="blinking">
-                <circle cx="10" cy="8" r="5" fill="#3399FF" /> 
-            </svg> <span style="text-transform: uppercase; font-size: 0.8em; font-weight: 600">current week</span>
-        </p>
+        <div class="d-flex justify-content-between">
+            <span class="card-title">Week ${week}: ${title} </strong></span>
+            <span class="card-text">
+                <svg height="20" width="20" class="blinking">
+                    <circle cx="10" cy="8" r="5" fill="#00ab08" /> 
+                </svg> <span style="text-transform: uppercase; font-size: 0.8em; font-weight: 600">current week</span>
+            </span>
+        </div>
         <ul id="currWeekList">
         </ul>
     `)
