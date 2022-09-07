@@ -156,29 +156,429 @@ const weekData = [
     },
     {
         week: 6, 
-        title: 'Vulnerability management + SIEM/Log Management', 
-        topics: ["Web application security", "OWASP top10 (tryhackme room)", "BurpSuite", "Team conflict management", "Professional Networking"]
+        title: 'Web application security', 
+        topics: ["Web application security", "OWASP top10 (tryhackme room)", "BurpSuite", "Team conflict management", "Professional Networking"],
+        data: [
+            {
+                title: "Cyber Security",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://tryhackme.com/room/burpsuitebasics">https://tryhackme.com/room/burpsuitebasics</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://youtu.be/UBWMLFbjPBc">https://youtu.be/UBWMLFbjPBc</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://m.youtube.com/c/RanaKhalil101">https://m.youtube.com/c/RanaKhalil101</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://tryhackme.com/room/owasptop10">https://tryhackme.com/room/owasptop10</a></p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://alison.com/course/web-application-security">https://alison.com/course/web-application-security</a></p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Business Etiquette",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://www.mindtools.com/pages/article/newTMM_79.htm">https://www.mindtools.com/pages/article/newTMM_79.htm</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <a href="https://employmenthero.com/blog/team-conflict-management/#:~:text=Take action early to help,Never take sides.">https://employmenthero.com/blog/team-conflict-management/#:~:text=Take action early to help,Never take sides.</a>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://hbr.org/2017/07/how-to-handle-a-disagreement-on-your-team">https://hbr.org/2017/07/how-to-handle-a-disagreement-on-your-team</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.youtube.com/watch?v=ElZ7MRIxzZU">https://www.youtube.com/watch?v=ElZ7MRIxzZU</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.youtube.com/watch?v=2l-AOBz69KU">https://www.youtube.com/watch?v=2l-AOBz69KU</a></p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p>Record video for 5 -10 min on topic Team conflict management with a scenario to explain how you will handle the situation.</p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Network Visibility",
+                html: `
+                    <li class="inside-text">
+                        <p>Update your linkedin and twitter profiles such as names, location, headshot, education, certifications etc.</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Add VTF internship as an experience in your profiles</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Submit 1 post about what you have learned this week during your VTF internship</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Be sure to add #VTFoundation and following line in your post</p>
+                    </li>
+                    <ol type=a>
+                        <li class="inside-text">
+                            Follow VTF: <a href="http://q-r.to/VTFoundation">http://q-r.to/VTFoundation</a>
+                        </li>
+                    </ol>
+                `
+            }
+        ]
     },
     {
         week: 7, 
         title: 'Virtualization Fundamentals', 
-        topics: ["Virtualization Fundamentals", "Network Security", "VMware HOL", "highlight your past accomplishments in the company to manager", "Professional Networking"]
+        topics: ["Virtualization Fundamentals", "Network Security", "VMware HOL", "highlight your past accomplishments in the company to manager", "Professional Networking"],
+        data: [
+            {
+                title: "Cyber Security",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://www.redhat.com/en/topics/virtualization/what-is-virtualization">https://www.redhat.com/en/topics/virtualization/what-is-virtualization</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.youtube.com/watch?v=Ci4jCxzbRJY">https://www.youtube.com/watch?v=Ci4jCxzbRJY</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>VMware HOL</p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://www.udemy.com/course/virtualization-one-hour-crash-course/">https://www.udemy.com/course/virtualization-one-hour-crash-course/</a></p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Business Etiquette",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                        <li class="inside-text">
+                            <p><a href="https://www.indeed.com/career-advice/interviewing/what-is-your-greatest-accomplishment">https://www.indeed.com/career-advice/interviewing/what-is-your-greatest-accomplishment</a></p>
+                        </li>
+                        <li class="inside-text">
+                            <a href="https://www.indeed.com/career-advice/resumes-cover-letters/listing-accomplishments-on-your-resume">https://www.indeed.com/career-advice/resumes-cover-letters/listing-accomplishments-on-your-resume</a>
+                        </li>
+                        <li class="inside-text">
+                            <p><a href="https://www.cnbc.com/2017/11/30/how-to-describe-your-past-work-experience-in-a-job-interview.html">https://www.cnbc.com/2017/11/30/how-to-describe-your-past-work-experience-in-a-job-interview.html</a></p>
+                        </li>
+                        <li class="inside-text">
+                            <p><a href="https://ca.indeed.com/career-advice/resumes-cover-letters/achievement-in-resume">https://ca.indeed.com/career-advice/resumes-cover-letters/achievement-in-resume</a></p>
+                        </li>
+                        <li class="inside-text">
+                            <p><a href="https://www.forbes.com/sites/amymorin/2017/01/29/7-ways-to-talk-about-your-accomplishments-without-sounding-like-a-braggart/?sh=414d434b6fcchttps://www.indeed.com/career-advice/resumes-cover-letters/years-of-experience-on-resume">https://www.forbes.com/sites/amymorin/2017/01/29/7-ways-to-talk-about-your-accomplishments-without-sounding-like-a-braggart/?sh=414d434b6fcchttps://www.indeed.com/career-advice/resumes-cover-letters/years-of-experience-on-resume</a></p>
+                        </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p>Create a YouTube video on “Highlighting your past accomplishments in the company to your manager” for 5 mins.</p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Create Google slide with 1 slide on “Give 5 reasons for promotion in VTF”</p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Network Visibility",
+                html: `
+                    <li class="inside-text">
+                        <p>Update your linkedin and twitter profiles such as names, location, headshot, education, certifications etc.</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Add VTF internship as an experience in your profiles</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Submit 1 post about what you have learned this week during your VTF internship</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Be sure to add #VTFoundation and following line in your post</p>
+                    </li>
+                    <ol type=a>
+                        <li class="inside-text">
+                            Follow VTF: <a href="http://q-r.to/VTFoundation">http://q-r.to/VTFoundation</a>
+                        </li>
+                    </ol>
+                `
+            }
+        ]
     },
     {
         week: 8, 
         title: 'Container fundamentals', 
-        topics: ["Container fundamentals", "Kubernetes", "How to join VTF", "Professional Networking"]
+        topics: ["Container fundamentals", "Kubernetes", "How to join VTF", "Professional Networking"],
+        data: [
+            {
+                title: "Cyber Security",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://collabnix.com/docker-cheatsheet/">https://collabnix.com/docker-cheatsheet/</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://github.com/David-VTUK/CKA-StudyGuide"></a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://blog.cloudnativefolks.org/introduction-to-kubernetes-part-3-pods-scheduling-sequence">https://blog.cloudnativefolks.org/introduction-to-kubernetes-part-3-pods-scheduling-sequence</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://lnkd.in/eRTVDJ3J">https://lnkd.in/eRTVDJ3J</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.linkedin.com/posts/semaan_ebook-kubernetes-essentials-ugcPost-6956962563158851584-7Xen?utm_source=linkedin_share&utm_medium=ios_app">https://www.linkedin.com/posts/semaan_ebook-kubernetes-essentials-ugcPost-6956962563158851584-7Xen?utm_source=linkedin_share&utm_medium=ios_app</a></p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://www.edx.org/course/fundamentals-of-containers-kubernetes-and-red-hat">https://www.edx.org/course/fundamentals-of-containers-kubernetes-and-red-hat</a></p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Business Etiquette",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://www.youtube.com/watch?v=s2NlVas0Cew">https://www.youtube.com/watch?v=s2NlVas0Cew</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <a href="https://resume.io/blog/why-do-you-want-to-work-here">https://resume.io/blog/why-do-you-want-to-work-here</a>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://resources.biginterview.com/interview-questions-answers/why-do-you-want-to-work-here/">https://resources.biginterview.com/interview-questions-answers/why-do-you-want-to-work-here/</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://in.indeed.com/career-advice/interviewing/why-do-you-want-to-join-our-company">https://in.indeed.com/career-advice/interviewing/why-do-you-want-to-join-our-company</a></p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p>Create a Youtube video of 5-6 minutes on “why do you want to join VTF”</p>
+                            </li>
+                        `
+                    }
+                ]
+            }
+    
+        ]
     },
+    
+    
     {
         week: 9, 
         title: 'Cloud Fundamentals', 
-        topics: ["Cloud Fundamentals", "AWS Cloud", "mental and physical health", "Professional Networking"]
+        topics: ["Cloud Fundamentals", "AWS Cloud", "mental and physical health", "Professional Networking"],
+        data: [
+            {
+                title: "Cloud (AWS)",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://m.youtube.com/c/LearnCantrill/playlists">https://m.youtube.com/c/LearnCantrill/playlists</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://github.com/acantril/learn-cantrill-io-labs"></a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Navigator - <a href="https://atlas.mitre.org/navigator/">https://atlas.mitre.org/navigator/</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://cloudstudio.com.au/category/public-cloud/">https://cloudstudio.com.au/category/public-cloud/</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/aws-for-beginners1">https://www.mygreatlearning.com/academy/learn-for-free/courses/aws-for-beginners1</a></p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/cloud-foundations">https://www.mygreatlearning.com/academy/learn-for-free/courses/cloud-foundations</a></p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Business Etiquette",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://sageclinic.org/blog/healthy-body-mental-health/">https://sageclinic.org/blog/healthy-body-mental-health/</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <a href="https://www.linkedin.com/pulse/how-important-mncs-deal-mental-health-problem-chirag-naithani/">https://www.linkedin.com/pulse/how-important-mncs-deal-mental-health-problem-chirag-naithani/</a>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="http://ignited.in/I/a/99710">http://ignited.in/I/a/99710</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.youtube.com/watch?v=rTNEwzbpTTQ">https://www.youtube.com/watch?v=rTNEwzbpTTQ</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.youtube.com/watch?v=vG5S4Kkz9lo">https://www.youtube.com/watch?v=vG5S4Kkz9lo</a></p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p>Create a Youtube video with duration 5-6 minutes on  “mental and physical health ”</p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Network Visibility",
+                html: `
+                    <li class="inside-text">
+                        <p>Update your linkedin and twitter profiles such as names, location, headshot, education, certifications etc.</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Add VTF internship as an experience in your profiles</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Submit 1 post about what you have learned this week during your VTF internship</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Be sure to add #VTFoundation and following line in your post</p>
+                    </li>
+                    <ol type=a>
+                        <li class="inside-text">
+                            Follow VTF: <a href="http://q-r.to/VTFoundation">http://q-r.to/VTFoundation</a>
+                        </li>
+                    </ol>
+                `
+            }
+        ]
     },
     {
         week: 10, 
         title: 'CTF or Threat Hunting Lab', 
-        topics: ["CTF or threat hunting lab", "and...", "<b>Oops! It's SECRET🤐</b>"]
-    },
+        topics: ["CTF or threat hunting lab", "and...", "<b>Oops! It's SECRET🤐</b>"],
+        data: [
+            {
+                title: "Technology",
+                options: [
+                    {
+                        title: "Cyber Security",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://tryhackme.com/room/basicpentestingjt">https://tryhackme.com/room/basicpentestingjt</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://tryhackme.com/room/easyctf">https://tryhackme.com/room/easyctf</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://tryhackme.com/room/ohsint">https://tryhackme.com/room/ohsint</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://tryhackme.com/room/rrootme">https://tryhackme.com/room/rrootme</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://tryhackme.com/room/lazyadmin">https://tryhackme.com/room/lazyadmin</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><strong>TRAFFIC ANALYSIS EXERCISE - </strong></strong><a href="https://www.malware-traffic-analysis.net/2015/08/31/page2.html"></a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.malware-traffic-analysis.net/2015/08/31/index.html">https://www.malware-traffic-analysis.net/2015/08/31/index.html</a></p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Business Etiquette",
+                options: [
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p>Create Google Slides and share your experience and learning from VTF</p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Network Visibility",
+                html: `
+                    <li class="inside-text">
+                        <p>Update your linkedin and twitter profiles such as names, location, headshot, education, certifications etc.</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Add VTF internship as an experience in your profiles</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Submit 1 post about what you have learned this week during your VTF internship</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Be sure to add #VTFoundation and following line in your post</p>
+                    </li>
+                    <ol type=a>
+                        <li class="inside-text">
+                            Follow VTF: <a href="http://q-r.to/VTFoundation">http://q-r.to/VTFoundation</a>
+                        </li>
+                    </ol>
+                `
+            }
+        ]
+    }
 ]
 
 function changeBodyHtml(data) {
