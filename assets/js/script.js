@@ -193,7 +193,7 @@ $( document ).ready(function() {
     const {week, title, topics} = weekData.filter(data => data.week === currWeek)[0];
     $("#currWeekContent").html(`
         <div class="d-flex justify-content-between">
-            <span class="card-title">Week ${week}: ${title} </strong></span>
+            <span class="card-title"><strong>Week ${week}: ${title} </strong></span>
             <span class="card-text">
                 <svg height="20" width="20" class="blinking">
                     <circle cx="10" cy="8" r="5" fill="#00ab08" /> 
