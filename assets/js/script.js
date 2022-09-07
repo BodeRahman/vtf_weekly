@@ -36,7 +36,38 @@ const weekData = [
                     },
                     {
                         title: "Exercises",
-                        html: `<h4>Exercises - Content to be added</h4>`
+                        html: `
+                            <li class="inside-text">
+                                <p>Red Canary Atomic Red - <a href="https://redcanary.com/blog/atomic-red-team-tests-catching-dragon-tail/">https://redcanary.com/blog/atomic-red-team-tests-catching-dragon-tail/</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Metta - <a href="https://github.com/uber-common/metta">Metta Github</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Infection Monkey - <a href="https://0x1.gitlab.io/pentesting/Infection-Monkey/">https://0x1.gitlab.io/pentesting/Infection-Monkey/</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Mitre Caldera - <a href="https://github.com/mitre/caldera">Caldera Github</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Prelude Operation - <a href=" https://github.com/preludeorg"> https://github.com/preludeorg</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>PurpleSharp - <a href="https://github.com/mvelazc0/PurpleSharp">PurpleSharp Github</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Endgame’s RTA - <a href="https://github.com/endgameinc/RTA">Endgame’s RTA Github</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://app.cybrary.it/browse/course/mitre-attack-adversary-emulation">https://app.cybrary.it/browse/course/mitre-attack-adversary-emulation</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://academy.attackiq.com/courses/top-attck-techniques">https://academy.attackiq.com/courses/top-attck-techniques</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://academy.attackiq.com/courses/countering-ransomware-with-mitre-attack">https://academy.attackiq.com/courses/countering-ransomware-with-mitre-attack</a></p>
+                            </li>
+                        `
                     }
                 ]
             },
@@ -45,17 +76,61 @@ const weekData = [
                 options: [
                     {
                         title: "Topics",
-                        html: `<h4>Topics - Content to be added</h4>`
+                        html: `
+                            <li class="inside-text">
+                                <p>APA guidelines</p>
+                            </li>
+
+                            <ol type=a>
+                                <li class="inside-text">
+                                    <a href="https://www.apa.org/practice/guidelines/">https://www.apa.org/practice/guidelines/</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.youtube.com/watch?v=xWFqv-aJAXE">https://www.youtube.com/watch?v=xWFqv-aJAXE</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.youtube.com/watch?v=hS7xBrWXmYU">https://www.youtube.com/watch?v=hS7xBrWXmYU</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.scribbr.com/apa-style/format/">https://www.scribbr.com/apa-style/format/</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.verywellmind.com/how-to-write-an-essay-in-apa-format-2794837">https://www.verywellmind.com/how-to-write-an-essay-in-apa-format-2794837</a>
+                                </li>
+                            </ol>   
+                        `
                     },
                     {
                         title: "Exercises",
-                        html: `<h4>Exercises - Content to be added</h4>`
+                        html: `
+                            <li class="inside-text">
+                                <p>Create a sample document about the topics you have learnt about this week in the Technology section using the APA Guidelines Format.</p>
+                            </li>
+                        `
                     }
                 ]
             },
             {
                 title: "Network Visibility",
-                html: `<h4>Network Visibility - to be added</h4>`
+                html: `
+                    <li class="inside-text">
+                        <p>Update your linkedin and twitter profiles such as names, location, headshot, education, certifications etc.</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Add VTF internship as an experience in your profiles</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Submit 1 post about what you have learned this week during your VTF internship</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Be sure to add #VTFoundation and following line in your post</p>
+                    </li>
+                    <ol type=a>
+                        <li class="inside-text">
+                            Follow VTF: <a href="http://q-r.to/VTFoundation">http://q-r.to/VTFoundation</a>
+                        </li>
+                    </ol>
+                `
             }
         ]
     },

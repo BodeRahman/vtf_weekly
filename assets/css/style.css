@@ -278,7 +278,8 @@ footer {
     padding: 1rem;
 }
 
-#weekModal .accordion {
+#weekModal .accordion,
+#weekModal #weeklyCardData {
     max-height: calc(80vh - 1rem - 60px);
     overflow: auto;
 }
@@ -340,9 +341,9 @@ footer {
 }
 
 #weekModal .inside-text {
-    padding: 0.4em 0;
-    font-size: 1.0rem;
-    font-weight: 500;
+    padding: 0.2em 0;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .hidden {
@@ -386,5 +387,19 @@ footer {
     #weekModal .weekCard {
         width: 95%;
         min-width: 0;
+    }
+    #weekModal .accordion .accordion-button {
+        padding: 10px 5px;
+        font-size: 0.6em;
+    }
+    .accordion-body {
+        padding: 0.5rem 0.75rem;
+    }
+    #weekModal .accordion .inner-button {
+        padding: 0.2em;
+        font-size: 0.9em;
+    }
+    .row>* {
+        padding: 0.1em;
     }
 }
