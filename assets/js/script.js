@@ -164,10 +164,10 @@ const weekData = [
                                 <p>SIGMA Rules - <a href="https://socprime.com/blog/sigma-rules-the-beginners-guide/">https://socprime.com/blog/sigma-rules-the-beginners-guide/</a></p>
                             </li>
                             <li class="inside-text">
-                                <p>Sigma - <a href="https://github.com/SigmaHQ/sigma"></a></p>
+                                <p>Sigma - <a href="https://github.com/SigmaHQ/sigma">https://github.com/SigmaHQ/sigma</a></p>
                             </li>
                             <li class="inside-text">
-                                <p><a href="https://github.com/nasbench/SIGMA-Resources"></a></p>
+                                <p><a href="https://github.com/nasbench/SIGMA-Resources">https://github.com/nasbench/SIGMA-Resources</a></p>
                             </li>
                             <li class="inside-text">
                                 <p><a href="https://m.youtube.com/watch?v=TAnBsrIJHro&feature=youtu.be">https://m.youtube.com/watch?v=TAnBsrIJHro&feature=youtu.be</a></p>
@@ -455,9 +455,9 @@ const weekData = [
                         title: "Exercises",
                         html: `
                             
-                            <p>
-                                <a https://www.mygreatlearning.com/academy/learn-for-free/courses/network-security">https://www.mygreatlearning.com/academy/learn-for-free/courses/network-security</a>
-                            </p>
+                            <li class="inside-text">
+                                <p><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/network-security">https://www.mygreatlearning.com/academy/learn-for-free/courses/network-security</a></p>
+                            </li>
                         `
                     }
                 ]
