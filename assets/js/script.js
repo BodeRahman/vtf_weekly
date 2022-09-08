@@ -1,5 +1,5 @@
 
-const currWeek = 4;
+const currWeek = 7;
 let modalOpen = false;
 
 const weekData = [
@@ -137,22 +137,580 @@ const weekData = [
     {
         week: 2, 
         title: 'Vulnerability management + SIEM/Log Management', 
-        topics: ['SANS Vulnerability Management', 'Vulnerability-Assessment-Framework', 'Understanding Network Scanning usinng nmap', 'Splunk course', 'Qualys course', 'Professional Networking']
+        topics: ['SANS Vulnerability Management', 'Vulnerability-Assessment-Framework', 'Understanding Network Scanning usinng nmap', 'Splunk course', 'Qualys course', 'Professional Networking'],
+        data: [
+            {
+                title: "Cyber Security",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p>SANS Vulnerability Management Maturity Model: <a href="https://www.sans.org/posters/key-metrics-cloud-enterprise-vmmm/">https://www.sans.org/posters/key-metrics-cloud-enterprise-vmmm/</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Vulnerability Management for Dummies: <a href="https://media-exp1.licdn.com/dms/document/C561FAQGizZFT2nyJEA/feedshare-document-pdf-analyzed/0/1654516170886?e=1658361600&v=beta&t=_TjpM2-UMjV9sYL9C4WpoSXlWnkCvgpzlNgCRP1HZwE">https://media-exp1.licdn.com/dms/document/C561FAQGizZFT2nyJEA/feedshare-document-pdf-analyzed/0/1654516170886?e=1658361600&v=beta&t=_TjpM2-UMjV9sYL9C4WpoSXlWnkCvgpzlNgCRP1HZwE</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Vulnerability-Assessment-Framework - <a href="https://github.com/Acheron-VAF/Vulnerability-Assessment-Framework"></a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Vulnerability Management - <a href="https://www.cisa.gov/sites/default/files/publications/CRR_Resource_Guide-VM_0.pdf">https://www.cisa.gov/sites/default/files/publications/CRR_Resource_Guide-VM_0.pdf</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Understanding the Basics of Network Scanning using Nmap - <a href="https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/4-Nmap.md">https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/4-Nmap.md</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>SIGMA Rules - <a href="https://socprime.com/blog/sigma-rules-the-beginners-guide/">https://socprime.com/blog/sigma-rules-the-beginners-guide/</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Sigma - <a href="https://github.com/SigmaHQ/sigma"></a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://github.com/nasbench/SIGMA-Resources"></a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://m.youtube.com/watch?v=TAnBsrIJHro&feature=youtu.be">https://m.youtube.com/watch?v=TAnBsrIJHro&feature=youtu.be</a></p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p>Nmap - <a href="https://cyberlab.pacific.edu/courses/comp178/labs/lab-3-nmap-scanning">https://cyberlab.pacific.edu/courses/comp178/labs/lab-3-nmap-scanning </a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Application - Specific Scanning with Nikto, Acunetix, and WPScan</p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Business Etiquette",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <ul>
+                                <li class="inside-text">
+                                    <p>Effective time management</p>
+                                </li>
+                            </ul>
+
+                            <ol>
+                                <li class="inside-text">
+                                    <a href="https://www.microsoft.com/en-us/microsoft-365/business-insights-ideas/resources/time-management-101-how-to-manage-time">https://www.microsoft.com/en-us/microsoft-365/business-insights-ideas/resources/time-management-101-how-to-manage-time</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.microsoft.com/en-us/microsoft-365/business-insights-ideas/resources/9-effective-time-management-strategies">https://www.microsoft.com/en-us/microsoft-365/business-insights-ideas/resources/9-effective-time-management-strategies</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.indeed.com/career-advice/career-development/time-management-training">https://www.indeed.com/career-advice/career-development/time-management-training</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.thebalancecareers.com/level-1-management-skills-2275890">https://www.thebalancecareers.com/level-1-management-skills-2275890</a>
+                                </li>
+                            </ol>   
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p>Create a document based on APA guidelines, about time management.</p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Convert that into pdf.</p>
+                            </li>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Network Visibility",
+                html: `
+                    <li class="inside-text">
+                        <p>Update your linkedin and twitter profiles such as names, location, headshot, education, certifications etc.</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Add VTF internship as an experience in your profiles</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Submit 1 post about what you have learned this week during your VTF internship</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Be sure to add #VTFoundation and following line in your post</p>
+                    </li>
+                    <ol type=a>
+                        <li class="inside-text">
+                            Follow VTF: <a href="http://q-r.to/VTFoundation">http://q-r.to/VTFoundation</a>
+                        </li>
+                    </ol>
+                `
+            }
+        ]
     },
     {
         week: 3, 
         title: 'OSINT', 
-        topics: ['OSINT', 'Shodan', 'GooFuzz', 'Tryhackme rooms', "Don't Overcommit", 'Professional Networking']
+        topics: ['OSINT', 'Shodan', 'GooFuzz', 'Tryhackme rooms', "Don't Overcommit", 'Professional Networking'],
+        data: [
+            {
+                title: "Cyber Security",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p>The Complete Open Source Intelligence (OSINT) Training Course - <a href="https://www.youtube.com/watch?v=opLD4zFB5z0">https://www.youtube.com/watch?v=opLD4zFB5z0</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Shodan <a href="/vtf_weekly/assets/Shodan.pdf"><svg viewBox="0 0 16 16" class="file" style="width: 100%; height: 100%; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden;"><path d="M4.35645 15.4678H11.6367C13.0996 15.4678 13.8584 14.6953 13.8584 13.2256V7.02539C13.8584 6.0752 13.7354 5.6377 13.1406 5.03613L9.55176 1.38574C8.97754 0.804688 8.50586 0.667969 7.65137 0.667969H4.35645C2.89355 0.667969 2.13477 1.44043 2.13477 2.91016V13.2256C2.13477 14.7021 2.89355 15.4678 4.35645 15.4678ZM4.46582 14.1279C3.80273 14.1279 3.47461 13.7793 3.47461 13.1436V2.99219C3.47461 2.36328 3.80273 2.00781 4.46582 2.00781H7.37793V5.75391C7.37793 6.73145 7.86328 7.20312 8.83398 7.20312H12.5186V13.1436C12.5186 13.7793 12.1836 14.1279 11.5205 14.1279H4.46582ZM8.95703 6.02734C8.67676 6.02734 8.56055 5.9043 8.56055 5.62402V2.19238L12.334 6.02734H8.95703ZM8.59473 12.7266V10.6279L8.54004 9.56152L9.06641 10.1152L9.59277 10.6484C9.68848 10.7646 9.8457 10.833 9.98926 10.833C10.2969 10.833 10.5293 10.6143 10.5293 10.3066C10.5293 10.1357 10.4678 10.0127 10.3379 9.90332L8.45117 8.16699C8.29395 8.02344 8.16406 7.96191 7.99316 7.96191C7.8291 7.96191 7.69922 8.02344 7.54199 8.16699L5.65527 9.90332C5.52539 10.0127 5.46387 10.1357 5.46387 10.3066C5.46387 10.6143 5.68945 10.833 6.00391 10.833C6.14746 10.833 6.29785 10.7646 6.40039 10.6484L6.92676 10.1152L7.45312 9.56152L7.39844 10.6279V12.7266C7.39844 13.0547 7.67188 13.3008 7.99316 13.3008C8.32129 13.3008 8.59473 13.0547 8.59473 12.7266Z"></path></svg></a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>GooFuzz <a href="https://amp.kitploit.com/2022/06/goofuzz-tool-to-perform-fuzzing-with.html?amp=1&m=1">https://amp.kitploit.com/2022/06/goofuzz-tool-to-perform-fuzzing-with.html?amp=1&m=1</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Vulnerability Management - <a href="https://www.cisa.gov/sites/default/files/publications/CRR_Resource_Guide-VM_0.pdf">https://www.cisa.gov/sites/default/files/publications/CRR_Resource_Guide-VM_0.pdf</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.osinttechniques.com/osint-tools.html">https://www.osinttechniques.com/osint-tools.html</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p><a href="https://www.osinttechniques.com/osint-videos.html">https://www.osinttechniques.com/osint-videos.html</a></p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            
+                            <p>
+                                <a href="https://learn.baselgovernance.org/enrol/index.php?id=79">https://learn.baselgovernance.org/enrol/index.php?id=79</a>
+                            </p>
+                            <li class="inside-text">
+                                <a href="https://tryhackme.com/room/ohsint">https://tryhackme.com/room/ohsint</a>
+                            </li>
+                            <li class="inside-text">
+                                <a href="https://tryhackme.com/room/webosint">https://tryhackme.com/room/webosint</a>
+                            </li>
+                            <li class="inside-text">
+                                <a href="https://tryhackme.com/room/googledorking">https://tryhackme.com/room/googledorking</a>
+                            </li>
+                            <li class="inside-text">
+                                <a href="https://tryhackme.com/room/searchlightosint">https://tryhackme.com/room/searchlightosint</a>
+                            </li>
+                            <li class="inside-text">
+                                <a href="https://tryhackme.com/room/geolocatingimages">https://tryhackme.com/room/geolocatingimages</a>
+                            </li> 
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Business Etiquette",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <ul>
+                                <li class="inside-text">
+                                    <p>Don't Overcommit</p>
+                                </li>
+                            </ul>
+
+                            <ol>
+                                <li class="inside-text">
+                                    <a href="https://bizfluent.com/13721510/6-ways-to-make-sure-you-dont-overcommit">https://bizfluent.com/13721510/6-ways-to-make-sure-you-dont-overcommit</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.bustle.com/articles/169823-5-ways-to-stop-overcommitting-yourself-because-its-totally-ok-to-say-no">https://www.bustle.com/articles/169823-5-ways-to-stop-overcommitting-yourself-because-its-totally-ok-to-say-no</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://goop.com/wellness/mindfulness/why-we-overcommit/">https://goop.com/wellness/mindfulness/why-we-overcommit/</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.youtube.com/watch?v=Z_Baka9RVSo">https://www.youtube.com/watch?v=Z_Baka9RVSo</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.youtube.com/watch?v=yrdUH0YHsV0">https://www.youtube.com/watch?v=yrdUH0YHsV0</a>
+                                </li>
+                            </ol>   
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p>Create an audio only recording of 4 to 6 minutes, explaining how you will avoid over committing.</p>
+                            </li>
+                           
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Network Visibility",
+                html: `
+                    <li class="inside-text">
+                        <p>Update your linkedin and twitter profiles such as names, location, headshot, education, certifications etc.</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Add VTF internship as an experience in your profiles</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Submit 1 post about what you have learned this week during your VTF internship</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Be sure to add #VTFoundation and following line in your post</p>
+                    </li>
+                    <ol type=a>
+                        <li class="inside-text">
+                            Follow VTF: <a href="http://q-r.to/VTFoundation">http://q-r.to/VTFoundation</a>
+                        </li>
+                    </ol>
+                `
+            }
+        ]
     },
     {
         week: 4, 
         title: 'Network Security', 
-        topics: ['Scappy', 'PFsense', 'Guacamole', 'Honeypots', 'Security Onion', 'Project Management', 'Professional Networking']
+        topics: ['Scappy', 'PFsense', 'Guacamole', 'Honeypots', 'Security Onion', 'Project Management', 'Professional Networking'],
+        data: [
+            {
+                title: "Cyber Security",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p><a href="https://www.youtube.com/watch?v=DLiP7y51OAQ">https://www.youtube.com/watch?v=DLiP7y51OAQ</a></p>
+                            </li>
+                            <li class="inside-text">
+                                <p>PFsense</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <p>FREE - <a href="https://www.udemy.com/course/crash-course-manage-network-security-with-pfsense-firewall/">https://www.udemy.com/course/crash-course-manage-network-security-with-pfsense-firewall/</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=fsdm5uc_LsU">https://www.youtube.com/watch?v=fsdm5uc_LsU</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=wv1qTYR3faQ">https://www.youtube.com/watch?v=wv1qTYR3faQ</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>Security Onion</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <a href="https://securityonionsolutions.com/training/">https://securityonionsolutions.com/training/</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://blog.securityonion.net/2021/11/quick-malware-analysis-traffic-analysis.html">https://blog.securityonion.net/2021/11/quick-malware-analysis-traffic-analysis.html</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>Scappy</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <a href="https://scapy.readthedocs.io/en/latest/introduction.html">https://scapy.readthedocs.io/en/latest/introduction.html</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.studytonight.com/network-programming-in-python/introduction-to-scapy">https://www.studytonight.com/network-programming-in-python/introduction-to-scapy</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=YKxKnVE5FaE">https://www.youtube.com/watch?v=YKxKnVE5FaE</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=AutB5TVviPA">https://www.youtube.com/watch?v=AutB5TVviPA</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>Guacamole</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <a href="https://guacamole.apache.org/doc/0.9.0/gug/installing-guacamole.html">https://guacamole.apache.org/doc/0.9.0/gug/installing-guacamole.html</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://bobcares.com/blog/how-to-install-apache-guacamole/">https://bobcares.com/blog/how-to-install-apache-guacamole/</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=qy2mOQZnwpk">https://www.youtube.com/watch?v=qy2mOQZnwpk</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=Mjrj6tdj1wo">https://www.youtube.com/watch?v=Mjrj6tdj1wo</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=DGw6P5Lkj-U">https://www.youtube.com/watch?v=DGw6P5Lkj-U</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>Honeypots</p>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            
+                            <p>
+                                <a https://www.mygreatlearning.com/academy/learn-for-free/courses/network-security">https://www.mygreatlearning.com/academy/learn-for-free/courses/network-security</a>
+                            </p>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Business Etiquette",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <ol>
+                                <li class="inside-text">
+                                    <a href="https://www.investopedia.com/terms/p/project-management.asp#:~:text=Project management involves the planning,%2C technology%2C and intellectual property">https://www.investopedia.com/terms/p/project-management.asp#:~:text=Project management involves the planning,%2C technology%2C and intellectual property</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.pmi.org/about/learn-about-pmi/what-is-project-management">https://www.pmi.org/about/learn-about-pmi/what-is-project-management</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.youtube.com/watch?v=ztmaTF_Qs9A">https://www.youtube.com/watch?v=ztmaTF_Qs9A</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.youtube.com/watch?v=Wk607ruc8P0">https://www.youtube.com/watch?v=Wk607ruc8P0</a>
+                                </li>
+                            </ol>   
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <a href="https://certiprof.com/pages/scrum-foundation-certificate-free">https://certiprof.com/pages/scrum-foundation-certificate-free</a>
+                            </li>
+                           
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Network Visibility",
+                html: `
+                    <li class="inside-text">
+                        <p>Update your linkedin and twitter profiles such as names, location, headshot, education, certifications etc.</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Add VTF internship as an experience in your profiles</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Submit 1 post about what you have learned this week during your VTF internship</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Be sure to add #VTFoundation and following line in your post</p>
+                    </li>
+                    <ol type=a>
+                        <li class="inside-text">
+                            Follow VTF: <a href="http://q-r.to/VTFoundation">http://q-r.to/VTFoundation</a>
+                        </li>
+                    </ol>
+                `
+            }
+        ]
     },
     {
         week: 5, 
         title: 'Endpoint Security', 
-        topics: ["Endpoint Security", "Windows,Linux", "OSSEC, Wazuh", "PsExec, Bloodhound", "Invoke-Obfuscation, CrackMapExec", "Sysmon", "Effective communication-written, Oral", "Professional Networking"]
+        topics: ["Endpoint Security", "Windows,Linux", "OSSEC, Wazuh", "PsExec, Bloodhound", "Invoke-Obfuscation, CrackMapExec", "Sysmon", "Effective communication-written, Oral", "Professional Networking"],
+        data: [
+            {
+                title: "Cyber Security",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <li class="inside-text">
+                                <p>Windows</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <p><a href="https://docs.microsoft.com/en-us/azure/sentinel/skill-up-resources">https://docs.microsoft.com/en-us/azure/sentinel/skill-up-resources</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=fsdm5uc_LsU">https://www.youtube.com/watch?v=fsdm5uc_LsU</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=wv1qTYR3faQ">https://www.youtube.com/watch?v=wv1qTYR3faQ</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>Linux</p>
+                            </li>
+                            <li class="inside-text">
+                                <p>OSSEC</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <a href="https://www.ossec.net/">https://www.ossec.net/</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=MNp_2a-yB_w">https://www.youtube.com/watch?v=MNp_2a-yB_w</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=JejFjdOFVus">https://www.youtube.com/watch?v=JejFjdOFVus</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>Wazuh</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=TfyCYt6S5XQ">https://www.youtube.com/watch?v=TfyCYt6S5XQ</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://documentation.wazuh.com/current/installation-guide/index.html">https://documentation.wazuh.com/current/installation-guide/index.html</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=kd5THDYTarM">https://www.youtube.com/watch?v=kd5THDYTarM</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>PsExec</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <a href="https://www.itprotoday.com/windows-server/psexec-explainer-mark-russinovich">https://www.itprotoday.com/windows-server/psexec-explainer-mark-russinovich</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/psexec">https://docs.microsoft.com/en-us/sysinternals/downloads/psexec</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>Bloodhound</p>
+                            </li>
+                            <li class="inside-text">
+                                <p>Invoke-Obfuscation</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <a href="https://github.com/danielbohannon/Invoke-Obfuscation"></a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.danielbohannon.com/blog-1/2017/12/2/the-invoke-obfuscation-usage-guide">https://www.danielbohannon.com/blog-1/2017/12/2/the-invoke-obfuscation-usage-guide</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://medium.com/@ammadb/invoke-obfuscation-hiding-payloads-to-avoid-detection-87de291d61d3">https://medium.com/@ammadb/invoke-obfuscation-hiding-payloads-to-avoid-detection-87de291d61d3</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://cqureacademy.com/blog/hacks/invoke-obfuscation">https://cqureacademy.com/blog/hacks/invoke-obfuscation</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <a href="https://www.youtube.com/watch?v=6o7hMytqBfA">https://www.youtube.com/watch?v=6o7hMytqBfA</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>CrackMapExec</p>
+                                <ol type=a>
+                                    <li class="inside-text">
+                                        <a href="https://github.com/byt3bl33d3r/CrackMapExec">https://github.com/byt3bl33d3r/CrackMapExec</a></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="inside-text">
+                                <p>Details Of SysmonSimulator : <a href="https://lnkd.in/eDYxnp5E">https://lnkd.in/eDYxnp5E</a></p>
+                                <ul>
+                                    <li class="inside-text">
+                                        <p>Details Of Sysmon : <a href="https://lnkd.in/e5xHBDqj">https://lnkd.in/e5xHBDqj</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <p>GitHub : <a href="https://lnkd.in/eTqfEfd8">https://lnkd.in/eTqfEfd8</a></p>
+                                    </li>
+                                    <li class="inside-text">
+                                        <p>Latest Release ( Source And EXE File ) : <a href="https://lnkd.in/ewHGcFf2">https://lnkd.in/ewHGcFf2</a></p>
+                                    </li>
+                                </ul>
+                            </li>
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            
+                            <p>
+                                <a href="https://www.udemy.com/course/check-point-jump-start-harmony-endpoint-security/">https://www.udemy.com/course/check-point-jump-start-harmony-endpoint-security/</a>
+                            </p>
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Business Etiquette",
+                options: [
+                    {
+                        title: "Topics",
+                        html: `
+                            <ol>
+                                <li class="inside-text">
+                                    <a href="https://theinvestorsbook.com/effective-communication.html">https://theinvestorsbook.com/effective-communication.html</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.helpguide.org/articles/relationships-communication/effective-communication.htm">https://www.helpguide.org/articles/relationships-communication/effective-communication.htm</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.proofhub.com/articles/effective-communication">https://www.proofhub.com/articles/effective-communication</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.youtube.com/watch?v=etlI6J5MG0w">https://www.youtube.com/watch?v=etlI6J5MG0w</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.youtube.com/watch?v=2Yw6dFQBklA">https://www.youtube.com/watch?v=2Yw6dFQBklA</a>
+                                </li>
+                                <li class="inside-text">
+                                    <a href="https://www.youtube.com/watch?v=7JZ1v-VwTXg">https://www.youtube.com/watch?v=7JZ1v-VwTXg</a>
+                                </li>
+                            </ol>   
+                        `
+                    },
+                    {
+                        title: "Exercises",
+                        html: `
+                            <li class="inside-text">
+                                <p>Create a You-tube Video of 5-6 minutes on “ Effective Communication“</p>
+                            </li>
+                           
+                        `
+                    }
+                ]
+            },
+            {
+                title: "Network Visibility",
+                html: `
+                    <li class="inside-text">
+                        <p>Update your linkedin and twitter profiles such as names, location, headshot, education, certifications etc.</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Add VTF internship as an experience in your profiles</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Submit 1 post about what you have learned this week during your VTF internship</p>
+                    </li>
+                    <li class="inside-text">
+                        <p>Be sure to add #VTFoundation and following line in your post</p>
+                    </li>
+                    <ol type=a>
+                        <li class="inside-text">
+                            Follow VTF: <a href="http://q-r.to/VTFoundation">http://q-r.to/VTFoundation</a>
+                        </li>
+                    </ol>
+                `
+            }
+        ]
     },
     {
         week: 6, 
