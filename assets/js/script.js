@@ -1,12 +1,11 @@
 
-const currWeek = 10;
+const currWeek = 4;
 let modalOpen = false;
 
 const weekData = [
     {
         week: 1, 
         title: 'CyberSecurity Foundations', 
-        topics: ['MITRE attack', 'Breach & Attack Simulation', 'Red Canary Atomic Red', 'CYBERSECURITY FRAMEWORK', 'Professional Networking'],
         data: [
             {
                 title: "Technology",
@@ -137,7 +136,6 @@ const weekData = [
     {
         week: 2, 
         title: 'Vulnerability management + SIEM/Log Management', 
-        topics: ['SANS Vulnerability Management', 'Vulnerability-Assessment-Framework', 'Understanding Network Scanning usinng nmap', 'Splunk course', 'Qualys course', 'Professional Networking'],
         data: [
             {
                 title: "Cyber Security",
@@ -255,7 +253,6 @@ const weekData = [
     {
         week: 3, 
         title: 'OSINT', 
-        topics: ['OSINT', 'Shodan', 'GooFuzz', 'Tryhackme rooms', "Don't Overcommit", 'Professional Networking'],
         data: [
             {
                 title: "Cyber Security",
@@ -373,7 +370,6 @@ const weekData = [
     {
         week: 4, 
         title: 'Network Security', 
-        topics: ['Scappy', 'PFsense', 'Guacamole', 'Honeypots', 'Security Onion', 'Project Management', 'Professional Networking'],
         data: [
             {
                 title: "Cyber Security",
@@ -522,7 +518,6 @@ const weekData = [
     {
         week: 5, 
         title: 'Endpoint Security', 
-        topics: ["Endpoint Security", "Windows,Linux", "OSSEC, Wazuh", "PsExec, Bloodhound", "Invoke-Obfuscation, CrackMapExec", "Sysmon", "Effective communication-written, Oral", "Professional Networking"],
         data: [
             {
                 title: "Cyber Security",
@@ -709,8 +704,7 @@ const weekData = [
     },
     {
         week: 6, 
-        title: 'Web application security', 
-        topics: ["Web application security", "OWASP top10 (tryhackme room)", "BurpSuite", "Team conflict management", "Professional Networking"],
+        title: 'Web App Security', 
         data: [
             {
                 title: "Cyber Security",
@@ -802,7 +796,6 @@ const weekData = [
     {
         week: 7, 
         title: 'Virtualization Fundamentals', 
-        topics: ["Virtualization Fundamentals", "Network Security", "VMware HOL", "highlight your past accomplishments in the company to manager", "Professional Networking"],
         data: [
             {
                 title: "Cyber Security",
@@ -894,7 +887,6 @@ const weekData = [
     {
         week: 8, 
         title: 'Container fundamentals', 
-        topics: ["Container fundamentals", "Kubernetes", "How to join VTF", "Professional Networking"],
         data: [
             {
                 title: "Cyber Security",
@@ -967,7 +959,6 @@ const weekData = [
     {
         week: 9, 
         title: 'Cloud Fundamentals', 
-        topics: ["Cloud Fundamentals", "AWS Cloud", "mental and physical health", "Professional Networking"],
         data: [
             {
                 title: "Cloud (AWS)",
@@ -1062,7 +1053,6 @@ const weekData = [
     {
         week: 10, 
         title: 'CTF or Threat Hunting Lab', 
-        topics: ["CTF or threat hunting lab", "and...", "<b>Oops! It's SECRET🤐</b>"],
         data: [
             {
                 title: "Technology",
@@ -1180,7 +1170,7 @@ function showModal(week) {
 
     ))
 
-    topics.map(topic => $("#weekModal .body ul").append(`<li class="inside-text">${topic}</li>`));
+    $("#weekModal #weeklyCardData").html(data[0].options ? data[0].options[0].html : data[0].html);
 
     $("#weekModal").show();
     $("#weekModal .weekCard").css("margin-top", "-500px").animate({
@@ -1203,11 +1193,11 @@ $( document ).ready(function() {
     $("#weekModal").hide();
     // Populate All Weeks
     const section = weekData.map(data => `
-        <div class="listItem${data.week < currWeek ? ' completed' : ''}">
+        <div class="listItem${data.week < currWeek ? ' completed' : data.week === currWeek ? ' current' : ''}">
             <span><strong>Week-${data.week}</strong></span>
-            ${data.week < currWeek ?
+            ${data.week <= currWeek ?
                 `<button type="button" class="btn btn-primary btn-sm" onclick="showModal(${data.week})">
-                    Show
+                    ${data.week === currWeek ? 'View' : 'Show'}
                 </button>`
                 :
                 ""
@@ -1218,9 +1208,9 @@ $( document ).ready(function() {
     $("#sessionSection").html(section);
 
     //Populate Current Week
-    const {week, title, topics} = weekData.filter(data => data.week === currWeek)[0];
+    const {week, title, data} = weekData.filter(data => data.week === currWeek)[0];
     $("#currWeekContent").html(`
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between mb-4">
             <span class="card-title"><strong>Week ${week}: ${title} </strong></span>
             <span class="card-text">
                 <svg height="20" width="20" class="blinking">
@@ -1228,11 +1218,10 @@ $( document ).ready(function() {
                 </svg> <span style="text-transform: uppercase; font-size: 0.8em; font-weight: 600">current week</span>
             </span>
         </div>
-        <ul id="currWeekList">
-        </ul>
+        <ol id="currWeekList" style="font-size: 0.9em; max-height: 800px; overflow-y: auto">
+            ${data[0].options ? data[0].options[0].html : data[0].html}
+        </ol>
     `)
-
-    topics.map(topic => $("#currWeekList").append(`<li class="py-1">${topic}</li>`))
 
 });
 

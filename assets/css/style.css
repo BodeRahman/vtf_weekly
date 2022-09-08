@@ -168,6 +168,20 @@ header {
     color: #fff;
 }
 
+#currWeekContent *::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+#currWeekContent *::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+#currWeekContent *::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 20px;
+}
+
 .sessions {
     margin-top: 2rem;
     margin-left: 1rem;
@@ -189,6 +203,10 @@ header {
 
 .sessions .listItem.completed {
     border-left: 4px solid var(--themeColor);
+}
+
+.sessions .listItem.current {
+    border-left: 4px solid #3ac541;
 }
 
 .sessions .listItem:last-child {
@@ -219,6 +237,29 @@ header {
     box-shadow: 4px 4px 4px rgb(178, 176, 176);
     text-align: center;
     line-height: 20px;
+}
+
+.sessions .listItem.completed button {
+    background-color: var(--themeColor);
+    border-color: var(--themeColor);
+}
+
+.sessions .listItem.current:before {
+    content: "\f554";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: #fff;
+    box-shadow: none;
+    font-size: 10px;
+    background-color: #3ac541;
+    box-shadow: 4px 4px 4px rgb(178, 176, 176);
+    text-align: center;
+    line-height: 20px;
+}
+
+.sessions .listItem.current button {
+    background-color: #3ac541;
+    border-color: #3ac541;
 }
 
 .sessions .iconBtn {
