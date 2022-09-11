@@ -132,7 +132,9 @@ header {
     margin-bottom: 3rem;
 }
 
-
+.carousel img{
+    object-fit: cover;
+}
 /* Since positioning the image, we need to help out the caption */
 
 .carousel-caption {
@@ -442,5 +444,11 @@ footer {
     }
     .row>* {
         padding: 0.1em;
+    }
+
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+        line-height: 1.4;
     }
 }
