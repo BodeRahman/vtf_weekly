@@ -1,5 +1,5 @@
 
-const currWeek = 4;
+const currWeek = 1;
 let modalOpen = false;
 
 const weekData = [
