@@ -1,5 +1,4 @@
-
-const currWeek = 1;
+const currWeek = 2;
 let modalOpen = false;
 
 const weekData = [
@@ -13,6 +12,17 @@ const weekData = [
                     {
                         title: "Topics",
                         html: `
+                            <div style="position: relative; width: 80%; height: 0; padding-top: 56.2500%;
+                            padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFMXPSGSEE&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                            <button style="padding:2px 2px; font-size: 1rem; border-radius: 8px; margin-left: 25%; color: #fff; background-color: #0d6efd; font-weight:400; border-color: #0d6efd; " 
+                            href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFMXPSGSEE&#x2F;view?utm_content=DAFMXPSGSEE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">VTF-LIVE Sep 16</button>
+                            <br>
+                            <br>
                             <li class="inside-text">
                                 <p>MITRE ATTACK - <a href="https://attack.mitre.org/">https://attack.mitre.org/</a></p>
                                 <ol type=a>
@@ -209,6 +219,18 @@ const weekData = [
                     {
                         title: "Topics",
                         html: `
+                            <div style="position: relative; width: 80%; height: 0; padding-top: 56.2500%;
+                            padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                            border-radius: 8px; will-change: transform;">
+                                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFMXPSGSEE&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                </iframe>
+                            </div>
+                           
+                            <a role="button" style="padding:2px 2px; font-size: 1rem; border-radius: 8px; margin-left: 25%; color: #fff; text-decoration: none; background-color: #0d6efd; font-weight:400; border-color: #0d6efd;" 
+                            href="https://youtu.be/zO0Ht5DPybc" target="_blank">VTF-LIVE Sep 16</a>
+                            <br>
+                            <br>
                             <li class="inside-text">
                                 <p>SANS Vulnerability Management Maturity Model: <a href="https://www.sans.org/posters/key-metrics-cloud-enterprise-vmmm/">https://www.sans.org/posters/key-metrics-cloud-enterprise-vmmm/</a></p>
                             </li>
@@ -1299,9 +1321,8 @@ $(document).mouseup(function(e) {
     }
 });
 
-
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 16, 2022 17:00:00").getTime();
+var countDownDate = new Date("Sep 23, 2022 17:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
